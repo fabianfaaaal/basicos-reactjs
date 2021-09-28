@@ -1,12 +1,14 @@
 import React from 'react'
 
-function Header() {
+function Header({ titulo }) { //function declaration, con destructuring
 
-    return(
-        <div>
-            <h1 id="encabezado" className="encabezado">Tienda Virtual</h1>
-        </div>
-    )
+  return (
+    <div>
+      <h1 id="encabezado" className="encabezado">
+        {titulo}
+      </h1>
+    </div>
+  )
 }
 
 export default Header

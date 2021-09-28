@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react"
 
-const Footer = () => {
-    return (  
-        <footer>
-            <p>Todos los derechos reservados &copy;</p>
-        </footer>
-    )
-}
- 
+const Footer = ({ fecha }) => ( //function expression, con destructuring
+
+  <footer>
+    <p>Todos los derechos reservados &copy; {fecha}</p>
+  </footer>
+)
+
 export default Footer

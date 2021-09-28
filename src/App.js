@@ -5,11 +5,19 @@ import Footer from './components/Footer'
 //ESTE ES EL COMPONENTE PRINCIPAL, QUE ES PARA CARGAR OTROS COMPONENTES
 
 function App() {
+
+  //Obtener fecha 
+  const fecha = new Date().getFullYear()
+
   return (
     <Fragment>
-      <Header />
-      <h1>Hola Mundo!</h1>
-      <Footer />
+      <Header 
+        titulo ='Tienda Virtual'
+      />
+      
+      <Footer 
+        fecha = {fecha}
+      />
     </Fragment>
   );
 }
